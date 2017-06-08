@@ -1,0 +1,155 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+      width:@w;
+      height:@h;
+      background:@bg;   
+}
+.box(@dir:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient:@dir;
+}
+html,body,.container{
+    width:100%;
+    height:100%;
+    ovreflow:hidden;
+}
+.container{
+    .box(vertical);
+    header{
+        background:#f95464;
+        .top{
+            .box;
+            .full(100%,0.94rem,none);
+            -webkit-box-align:center;
+            .chunk{
+                .full(0.96rem,0.34rem,none);
+                border-right:0.01rem solid #fca1aa;
+                img{
+                    margin-left:0.4rem;
+                    .full(0.35rem,0.34rem,none);
+                }
+            }
+            p{
+                margin-left:0.2rem;
+                -webkit-box-flex:1;
+                color:#ffffff;
+                font-size:0.29rem;
+            }
+            span{
+                color:#ffffff;
+                font-size:0.29rem;
+                margin-right:0.4rem;
+            }
+        }
+        .center{
+            .full(100%,2.38rem,none);
+            line-height:0.96rem;
+            border-bottom:0.01rem solid #fb7b88;
+            .pen{
+                margin-left:1.16rem;
+                p{
+                    color:#ffffff;
+                    font-size:0.28rem;
+                    span{
+                        color:#ffffff;
+                        font-size:0.23rem;
+                    }
+                }
+            }
+            .down2{
+                .box;
+                h2{
+                    color:#ffffff;
+                    font-size:0.55rem;
+                    font-weight: bold;
+                    margin-right:0.37rem;
+                }
+                a{
+                    margin-right:0.26rem;
+                    color:#fee2e4;
+                    font-size:0.24rem;
+                } 
+            }
+        }
+        .down{
+            .box;
+            .full(100%,1.3rem,none);
+            -webkit-box-align:center;
+            text-align:center;
+            .left2{
+                -webkit-box-flex:1;
+                p{
+                    color:#ffffff;
+                    font-size:0.26rem;
+                }
+                span{
+                    color:#ffffff;
+                    font-size:0.3rem;
+                }
+            }
+            .right2{
+                -webkit-box-flex:1;
+                p{
+                    color:#ffffff;
+                    font-size:0.26rem;
+                }
+                span{
+                    color:#ffffff;
+                    font-size:0.3rem;
+                }
+                img{
+                    .full(0.3rem,0.2rem,none);
+                    position: absolute;
+                    left:5.6rem;
+                    top:4.43rem;
+                }
+            }
+        }
+    }
+    section{
+        overflow:auto;
+        .on{
+            .box;
+            .full(100%,1.29rem,none);
+            -webkit-box-align:center;
+            border-bottom:0.01rem solid #e5e5e5;
+           .left3{
+               width:1.86rem;
+               text-align:center;
+               a{
+                   img{
+                       .full(1.15rem,1.15rem,none);
+                   }
+               }
+           } 
+           .center3{
+               -webkit-box-flex:1;
+               p{
+                   font-size:0.28rem;
+                   color:#333333;
+               }
+               span{
+                   margin-left:0.85rem;
+                   font-size:0.23rem;
+                   color:#c6c6c6;
+               }
+           }
+           .right3{
+               margin-right:0.41rem;
+               color:#f9384b;
+               font-size:0.24rem;
+               p{
+                   text-align:center;
+                  width:0.98rem;
+                  height:0.38rem;
+                  border:0.01rem solid #f9384b; 
+                  border-radius: 0.04rem;
+               }
+               .coco{
+                   color:#999999;
+                   border:0.01rem solid #999999; 
+               }
+           }
+        }
+    }
+}

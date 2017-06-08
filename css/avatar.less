@@ -1,0 +1,123 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+      width:@w;
+      height:@h;
+      background:@bg;   
+}
+.box(@dir:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient:@dir;
+}
+html,body,.container{
+    width:100%;
+    height:100%;
+    ovreflow:hidden;
+}
+.container{
+    .box(vertical);
+    header{
+        .box;
+        .full(100%,0.89rem,#f9394b);
+        -webkit-box-align:center;
+        -webkit-box-pack: center;
+        img{
+            .full(0.35rem,0.35rem,none);
+            margin-left:0.4rem;
+        }
+        p{
+            margin-right:0.4rem;
+            text-align:center;
+            -webkit-box-flex:1;
+            color:#ffffff;
+            font-size:0.33rem;
+            
+        }
+    }
+    section{
+        -webkit-box-flex:1;
+        background:#f3f3f3;
+        .chunk{
+            .one{
+                .full(100%,0.88rem,#ffffff);
+                border-bottom:0.01rem solid #f8f8f8;
+                .box;
+                -webkit-box-align:center;
+                p{
+                    -webkit-box-flex:1;
+                    color:#333333;
+                    font-size:0.28rem;
+                    text-indent:0.4rem;
+                }
+                a{
+                    margin-right:0.41rem;
+                    img{
+                        .full(0.12rem,0.24rem,none);  
+                    }
+                }
+                span{
+                    color:#646464;
+                    margin-right:0.41rem;
+                    font-size:0.22rem;
+                }
+            }
+            .one2{
+                .full(100%,1.2rem,#ffffff);
+                border-bottom:0.01rem solid #f8f8f8;
+                .box;
+                -webkit-box-align:center;
+                p{
+                    -webkit-box-flex:1;
+                    color:#333333;
+                    font-size:0.28rem;
+                    text-indent:0.4rem;
+                }
+                span{
+                    color:#646464;
+                    margin-right:0.41rem;
+                    font-size:0.22rem;
+                    .header{
+                        .full(0.96rem,0.96rem,none);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zhezhao{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+//  调整层叠顺序
+    z-index:99999;
+    .commit{
+        .full(4.5rem,auto,#fff);
+        border-radius: 0.15rem;
+        //让已知宽高元素绝对居中
+        position:absolute;
+        left:50%;
+        margin-left:-2.25rem;
+        top:50%;
+        margin-top:-3rem;
+        .on{
+            height:0.85rem;
+            margin:0 0.5rem;
+            p{
+                border-bottom:0.01rem solid #eeeeee;
+                line-height:0.85rem;
+                a{
+                    color:#000000;
+                    font-size:0.28rem;
+                }
+            }
+            .ten{
+                border-bottom:0;
+            }
+        }
+    }
+}

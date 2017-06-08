@@ -1,0 +1,161 @@
+@import url(reset.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  ovreflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.89rem;
+  background: #f9394b;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.container header img {
+  width: 0.35rem;
+  height: 0.35rem;
+  background: none;
+  margin-left: 0.4rem;
+}
+.container header p {
+  margin-right: 0.4rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+  color: #ffffff;
+  font-size: 0.33rem;
+}
+.container section {
+  -webkit-box-flex: 1;
+  background: #f3f3f3;
+}
+.container section .chunk {
+  margin-top: 0.12rem;
+}
+.container section .chunk .one {
+  width: 100%;
+  height: 0.92rem;
+  background: #ffffff;
+  border-bottom: 0.01rem solid #f8f8f8;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container section .chunk .one p {
+  -webkit-box-flex: 1;
+  color: #333333;
+  font-size: 0.28rem;
+  text-indent: 0.4rem;
+}
+.container section .chunk .one a {
+  margin-right: 0.41rem;
+}
+.container section .chunk .one a img {
+  width: 0.12rem;
+  height: 0.24rem;
+  background: none;
+}
+.container section .chunk .one span {
+  color: #646464;
+  margin-right: 0.41rem;
+  font-size: 0.22rem;
+}
+.container section .down {
+  width: 100%;
+  height: 0.88rem;
+  background: none;
+  margin-top: 2.57rem;
+}
+.container section .down .ok {
+  width: auto;
+  height: 0.88rem;
+  background: #f9384b;
+  margin: 0 0.4rem;
+  border-radius: 0.09rem;
+}
+.container section .down .ok p {
+  text-align: center;
+  line-height: 0.88rem;
+  font-size: 0.3rem;
+}
+.container section .down .ok p a {
+  color: #ffffff;
+}
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+.zhezhao .commit {
+  width: 4.5rem;
+  height: 2.69rem;
+  background: #ffffff;
+  border-radius: 0.15rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.25rem;
+  top: 50%;
+  margin-top: -3rem;
+}
+.zhezhao .commit .top3 {
+  width: 100%;
+  height: 1.82rem;
+  background: none;
+}
+.zhezhao .commit .top3 .in2 {
+  padding: 0.28rem 0.28rem 0;
+}
+.zhezhao .commit .top3 .in2 p {
+  text-align: center;
+  color: #666666;
+  font-size: 0.28rem;
+}
+.zhezhao .commit .top3 .in2 input {
+  margin-top: 0.31rem;
+  width: 3.99rem;
+  text-align: center;
+  border: 0;
+  border-bottom: 0.02rem solid #ffc272;
+  outline: none;
+}
+.zhezhao .commit .down3 {
+  width: 100%;
+  height: auto;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding-top: 0.1rem;
+}
+.zhezhao .commit .down3 .left {
+  -webkit-box-flex: 1;
+}
+.zhezhao .commit .down3 .left a {
+  line-height: 0.7rem;
+  display: block;
+  text-align: center;
+  color: #ffc272;
+  font-size: 0.26rem;
+}
+.zhezhao .commit .down3 .right {
+  -webkit-box-flex: 1;
+}
+.zhezhao .commit .down3 .right a {
+  line-height: 0.7rem;
+  display: block;
+  text-align: center;
+  color: #f9384b;
+  font-size: 0.26rem;
+}

@@ -1,0 +1,125 @@
+@import url(reset.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  ovreflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.89rem;
+  background: #f9394b;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.container header .top img {
+  width: 0.35rem;
+  height: 0.35rem;
+  background: none;
+  margin-left: 0.4rem;
+}
+.container header p {
+  margin-right: 0.69rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+  color: #ffffff;
+  font-size: 0.33rem;
+}
+.container section {
+  -webkit-box-flex: 1;
+  background: #f3f3f3;
+}
+.container section .top2 {
+  width: 100%;
+  height: 2.25rem;
+  background: none;
+  -webkit-box-pack: center;
+}
+.container section .top2 .in {
+  margin: 0 0.39rem;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.container section .top2 .in p {
+  padding-top: 0.8rem;
+  font-size: 0.28rem;
+  color: #999999;
+}
+.container section .top2 .in p span {
+  color: #333333;
+}
+.container section .chunk {
+  margin-top: 0.18rem;
+}
+.container section .chunk .on {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 0.02rem solid #ededed;
+  margin: 0 0.39rem;
+  height: 0.86rem;
+  -webkit-box-align: center;
+}
+.container section .chunk .on:hover {
+  color: #333333;
+}
+.container section .chunk .on p {
+  color: #999999;
+}
+.container section .chunk .on input {
+  text-indent: 0.3rem;
+  -webkit-box-flex: 1;
+  height: 0.86rem;
+  border: 0;
+  outline: none;
+  background: #f3f3f3;
+}
+.container section .chunk .on2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 0.02rem solid #fabd6d;
+  margin: 0 0.39rem;
+  height: 0.86rem;
+  -webkit-box-align: center;
+}
+.container section .chunk .on2 p {
+  color: #999999;
+}
+.container section .chunk .on2 p:hover {
+  color: #333333;
+}
+.container section .chunk .on2 input {
+  text-indent: 0.3rem;
+  -webkit-box-flex: 1;
+  height: 0.86rem;
+  border: 0;
+  outline: none;
+  background: #f3f3f3;
+}
+.container section .down {
+  width: 100%;
+  height: 0.88rem;
+  background: none;
+  margin-top: 2.57rem;
+}
+.container section .down .ok {
+  width: auto;
+  height: 0.88rem;
+  background: #f9384b;
+  margin: 0 0.4rem;
+  border-radius: 0.09rem;
+}
+.container section .down .ok p {
+  text-align: center;
+  line-height: 0.88rem;
+  font-size: 0.3rem;
+}
+.container section .down .ok p a {
+  color: #ffffff;
+}
